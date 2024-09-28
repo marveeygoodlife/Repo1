@@ -1,0 +1,16 @@
+body { 
+    background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container, button {
+    color: white;
+}
+footer { display: flex;
+     top: 4rem;
+    bottom: 0;
+    left: 0;
+     padding: 60px;
+   }

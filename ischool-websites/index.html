@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Marveey" />
+    <meta name="desciption" content="This is a school website" />
+    <meta
+      name="keywords"
+      content="School, University, Result, Registration"
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="https://kit.fontawesome.com/184a11b74d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>School webpage</title>
+  </head>
+  <body>
+    <div id="maindiv">
+      <!-- Header -->
+      <header id="myid">
+        <!-- Insert Logo here -->
+        <h1>
+          Abubakar Tafawa Balewa University, Bauchi, Nigeria
+          <span>Citadel of Excellence</span>
+        </h1>
+        <h2>Online Screening Portal</h2>
+       
+      </header>
+      
+      <header id="aside">
+        <p class="text">Online screen portal </p>
+
+<!-- ADD ICON -->
+
+        <div><a href="homepage.html" class="alink"><i class="fa-solid fa-house"></i><span class="alinkspan">Home</span></a></div>
+
+        <div>
+        <p class="text">Welcome <a href="index.html">John Doe</a></p>
+        <button id="button" class="text btt">Logout</button>
+      </div>
+      </header>
+   
+      <nav id="mynav">
+        <h2>Dashboard</h2>
+        <hr>
+<div class="imgdiv">
+  <img src="images/profilepic.jpg" alt="profile pic" width="100px" height="100px"></div>        
+<ul class="nav-links">
+          <li><a href="#">Account Name</a></li>
+          <li><a href="#">Screening payment</a></li>
+          <li><a href="#">Upload passport</a></li>
+          <li><a href="#">Update account form</a></li>
+          <li><a href="#">School attended</a></li>
+          <li><a href="#">Result Obtained</a></li>
+          <li><a href="#">Screening Uploads</a></li>
+          <li><a href="form.html">Logout</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="hero">
+        <form action="/submit" method="post">
+          <h2 class="h2">RESULTS OBTAINED FORM</h2>
+          <div class="form-container">
+          <label for="result"
+            >Result Type
+            <select name="result" id="result" title="O-Level Results" required>
+              O-Level results
+              <option value="">Select an option</option>
+              <option value="waec">W.A.E.C</option>
+              <option value="neco">N.E.C.O</option>
+            </select>
+          </label> 
+          <label
+            >Exam
+            <select name="exam" id="exam" title="Exam Type" required>
+              <option value="">Select</option>
+              <option value="internal">JAN/FEB/(INTERNAL)</option>
+              <option value="external">MAY/AUG/(EXTERNAL)</option>
+            </select>
+          </label> 
+      
+        
+          <label for="cert"
+            >Result year
+            <select name="cert" id="cert">
+              <option value="">Select year</option>
+              <option value="2025">2025</option>
+              <option value="2025">2025</option>
+              <option value="2025">2025</option>
+            </select>
+          </label>  
+          <label for="body">Exam Body
+            <select name="body" id="body">
+              <option value="">Select One</option>
+              <option value="neco">NECO</option>
+              <option value="waec">WAEC</option>
+            </select>
+          </label>
+          
+<label for="sitting">Number of sitting
+<select name="sitting" id="sitting">
+  <option value="">Select</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+</select>
+</label>
+    
+          <label for="number"
+            >Examination number<input
+              type="number"
+              id="number"
+              name="number"
+              title="Enter exam number"
+          /></label>
+          
+
+          <button type="submit" value="submitl" class="bot">Add Row</button> 
+          <label for="grade"
+          >Grade
+          <select name="grade" id="grade" title="select grade">
+            <option value="">Select grade</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+          </select>
+        </label>  
+        <label for="course"
+        >  Course
+        <select name="course" id="course" title="select course">
+          <option value="">Select Course</option>
+          <option value="english">English</option>
+          <option value="medicine">Medicine</option>
+          <option value="science">Pol Science</option>
+        </select>
+      </label>
+        </form> 
+       </div>
+
+        <table>
+          <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Year</th>
+            <th>body</th>
+            <th>sitting</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>English</td>
+            <td>A</td>
+            <td>2028</td>
+            <td>NECO</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Maths</td>
+            <td>A</td>
+            <td>2028</td>
+            <td>NECO</td>
+<td>1</td>
+
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Physics</td>
+            <td>B</td>
+            <td>2028</td>
+            <td>NECO</td>
+<td>1</td>
+        </td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Biology</td>
+            <td>B</td>
+            <td>2028</td>
+            <td>NECO</td>
+<td>1</td>
+        </td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Chemistry</td>
+            <td>B</td>
+            <td>2028</td>
+            <td>NECO</td>
+            <td>1</td>
+        </td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Economics</td>
+            <td>C</td>
+            <td>2028</td>
+            <td>NECO</td>
+            <td>1</td>
+        </td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td>Agric</td>
+            <td>A</td>
+            <td>2028</td>
+            <td>NECO</td>
+            <td>1</td>
+        </td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td>Yoruba</td>
+            <td>B</td>
+            <td>2028</td>
+            <td>NECO</td>
+            <td>1</td>
+        </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6">!</td>
+          </tr>
+        </tfoot>
+        </table>
+      </div>
+      </main>
+    </div>
+    <script src="script.js">
+      document.getElementById("button").addEventListener("click", function() {
+    window.location.href = 'form.html';
+  });
+    </script>
+
+    </body>
+
+      <footer>
+        <p class="para">&copy;&nbsp;Goodlife, All Rights Reserved,  2029</p> 
+      </footer>
+    
+  
+</html>
