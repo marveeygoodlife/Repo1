@@ -23,8 +23,7 @@ The website is designed as a mockup for school students with a simple, responsiv
 
   ## Main page features
 
-- Alert Message: When you open the main page (index.html), a pop-up alert will appear saying "Welcome to Foodie Haven", welcoming users to the website.
-- Image Slider: The main page features an automatic image slider that rotates through various food images in a loop. This is controlled by JavaScript and switches images every 3 seconds.
+--INSERT FEATURES
 
   ## Folder structure
 
