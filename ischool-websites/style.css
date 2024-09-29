@@ -62,15 +62,15 @@
  */flex-direction: column;
 font-weight: 900; }
 
- span  {   margin-top:10px ;
 
-   font-size: 0.8rem;
- }
- #myid h2 {
+  .citadel {
    margin: 0.4rem;
    text-align: center;
+   font-size: 0.9rem;
  }
-
+h3 {
+  text-align: center;
+}
 h1, h2 {
    font-size:var(--heading-font);
 }
@@ -79,7 +79,7 @@ h1, h2 {
 
  #aside {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: end;
    grid-area: aside;
    color: black;
@@ -87,15 +87,19 @@ h1, h2 {
 border-bottom: 1px solid #3333334f;
 margin-bottom: 0.5rem;;
 }
-.alink {
+.alink { color: white;
    border-radius: 5px;
    text-decoration: none;
    padding: 5px;
    background-color: var(--header-button-color);
 }
+.alink:hover {
+  color: rgb(167, 41, 41);
+  text-decoration: underline;
+}
  
 .text {
-   font-size: large; 
+   font-size: 1rem; 
    display: inline-block;
  }
  .text a:visited {
@@ -120,9 +124,10 @@ margin-bottom: 0.5rem;;
    padding: 3px;
    background-color: var(--header-button-color);
  }
-.btt:focus {
-    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);;
-}
+ .btt:hover, .btt:focus {
+  box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+ }
+
  /* NAVIGATION STYLE */
 
  nav {grid-area: nav;
@@ -182,7 +187,7 @@ margin-bottom: 0.5rem;;
 }
 #mynav::-webkit-scrollbar-thumb {
 border-radius:
-10px;
+4px;
 background-color: var(--header-button-color);
 }
 #mynav::-webkit-scrollbar-thumb:hover {
@@ -225,7 +230,6 @@ form { width: 100%;
 .form-container {
    display: grid;
    grid-template-columns: repeat(3, 2fr);
-    
    gap: 5px;
 }
 
@@ -237,7 +241,7 @@ label {
 
 }
  select {
-   border: 1px outset rgb(93, 177, 225);
+   border: 1px outset rgba(93, 177, 225, 0.301);
    font-weight: 500;
     width: 140px;
  }
@@ -261,12 +265,12 @@ transition: 0.03ms width ease-in-ease-out;
    font-size: 15px;
    background-color: var(--main-heading);
     margin-top: 17px;
-    width: 100%;
+    width: 50%;
 height: 20px;}
 
-.bot:focus {
+.bot:focus, .bot:hover {
    outline: none;
-   box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+   box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.361);
 }
 
  /* TABLE STYLES */
@@ -536,16 +540,31 @@ flex-wrap: wrap;
 
   @media  (max-width: 480px) {
   body {
-    font-size: 2rem;
-    color: red;
-    font-weight: 900;
+    font-size: 1rem;
+     font-weight: 900;
+     margin: 0;
   }
-    header{ background: red;
-     width: 100%;
+  header, nav, form, table, footer {
+    margin: 0 auto;
+  }
+  .citadel {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  
+    header{ 
+      max-width: 480px;
+     width: 50%;
     }
     #myid h1 {  
-      
+      font-size: 1rem;
  white-space: wrap; 
+ }
+ .text {
+  font-size: 0.9rem;
+ }
+ .alink {
+  font-size: 1rem;
  }
     #maindiv {
         grid-template-columns: 1fr;  /* Switch to a single column */
@@ -559,9 +578,9 @@ flex-wrap: wrap;
     } 
  
     nav { 
-     width: 83%;
+     width: 50%;
      
-        height:auto ;  /* Adjust height of the navbar */
+        height:80vh;  /* Adjust height of the navbar */
      
         margin: 1px auto;
     }
@@ -569,7 +588,7 @@ flex-wrap: wrap;
    width: 50%;
  }
     form, table {
-        margin: 0;
+        margin: 0 auto;
         width: 100%;  /* Ensure form and table take full width */
     }
     /* label:first-child {

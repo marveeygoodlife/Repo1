@@ -25,10 +25,11 @@ The website is designed as a mockup for school students with a simple, responsiv
 
 --INSERT FEATURES
 
-  ## Folder structure
+## Folder structure
 
   foodie-haven-website/
 │
+
 - ├── index.html          # Student portal
 - ├── homepage.html        # Homepage of the school website
 - ├── form.html           # User login section
