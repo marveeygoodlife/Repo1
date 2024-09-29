@@ -25,11 +25,7 @@
  }
 
  body {
-<<<<<<< HEAD
-   height: 100vh;
-=======
    height: 120vh;
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
     font-family: var(--main-font);
     background-color: #fff;
     font-size: var(--font-size);
@@ -60,18 +56,6 @@
     color: #ffffff;
   }
 
-<<<<<<< HEAD
-  #myid h1 {  
-      text-align: center;
- white-space: nowrap; 
- }
-
- h6  {  
-text-align: center;
-margin: 0.4rem;
- }
-
-=======
   #myid h1 { display: flex;
       text-align: center;
 /* white-space: nowrap; 
@@ -82,7 +66,6 @@ font-weight: 900; }
 
    font-size: 0.8rem;
  }
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
  #myid h2 {
    margin: 0.4rem;
    text-align: center;
@@ -319,30 +302,19 @@ table:hover {
    color: #ffffff;
  justify-content: center;   align-items: center;
    bottom: 0;
-<<<<<<< HEAD
     padding: 40px;
-=======
-    padding: 10px;
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
   }
 
 
   /* HOMEPAGE STYLE */
-<<<<<<< HEAD
  /*  .homediv {
     display: flex; justify-content: space-between;
   } */
-=======
-  .homediv {
-    display: flex; justify-content: space-between;
-  }
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
 
   .homeh2 {
     text-align: center;
     margin: 1rem 0 5rem 0;
   }
-<<<<<<< HEAD
   .homediv {
     width: 100%;
     display: flex;
@@ -425,27 +397,6 @@ margin: 2rem auto;
      
 white-space: wrap; 
 }
-=======
-  .mybutton {
-    width: 250px; border: 1px solid rgba(0, 0, 0, 0.511); padding: 20px; font-size: 15px; font-weight: 900; background: transparent;
-    margin-bottom: 3rem;
-  }
-  .student {
-    flex-shrink: 1;
-  }
-  .teacher {
-    flex-shrink: 2;
-  }
- 
- /* RESPONSIVENESS  */
-
- /* Media Query for screens 700px or smaller */
-@media (max-width: 700px) {
-   :root {
-       --font-size: 0.9rem; /* Adjust font size for smaller screens */
-   }
-   
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
    #maindiv {
        grid-template-columns: 1fr;  /* Switch to a single column */
        grid-template-areas:
@@ -455,7 +406,6 @@ white-space: wrap;
            "main"
            "footer";  /* Stack everything vertically */
        grid-template-rows: auto;  /* Adjust rows to fit content */
-<<<<<<< HEAD
    } 
 
    nav { 
@@ -468,20 +418,10 @@ white-space: wrap;
 .bot {
   width: 50%;
 }
-=======
-   }
-
-   nav {
-       height: auto;  /* Adjust height of the navbar */
-       margin-top: 0;
-   }
-
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
    form, table {
        margin: 0;
        width: 100%;  /* Ensure form and table take full width */
    }
-<<<<<<< HEAD
    /* label:first-child {
       margin-top: rem;  margin spacing   at the top only */
    
@@ -554,45 +494,10 @@ flex-wrap: wrap;
 
    h1, h2 {
        font-size: 1.2rem; Reduce heading sizes 
-=======
-   label:first-child {
-      margin-top: 2rem; /* margin spacing   at the top only */
-   }
-   .form-container {
-       grid-template-columns: 1fr;  /* Single-column form layout */
-   }
-}
-
-/* Media Query for screens 480px or smaller */
-@media (max-width: 480px) {
-   :root {
-       --font-size: 0.8rem; /*   reduce font size for very small screens */
-   }
-   
-   #maindiv {
-       grid-template-columns: 1fr;  /* Single column for small screens */
-       grid-template-areas:
-           "head"
-           "aside"
-           "nav"
-           "main"
-           "footer";
-       grid-template-rows: auto;  /* Adjust rows */
-   }
-
-   header, nav, form, table, footer {
-       padding: 5px;  /* Reduce padding for smaller elements */
-   }
-
-   h1, h2 {
-       font-size: 1.2rem;  /* Reduce heading sizes */
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
    }
 
    form, table {
-       margin: 0;
-<<<<<<< HEAD
-       width: 100%;  /* Full width for form and table 
+       margin: 0;       width: 100%;  /* Full width for form and table 
    }
 
    .form-container {
@@ -602,25 +507,12 @@ flex-wrap: wrap;
    nav {
       width: 90%; /* Adjust nav bar width 
        font-size: 0.8rem;  Adjust navbar font size 
-=======
-       width: 100%;  /* Full width for form and table */
-   }
-
-   .form-container {
-       grid-template-columns: 1fr;  /* Single-column form layout */
-   }
-
-   nav {
-      width: 90%; /* Adjust nav bar width */
-       font-size: 0.8rem;  /* Adjust navbar font size */
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
    }
 
    input, select {
        width: 100%;  /* Make form inputs fill the width */
  /*   }
    #aside p { font-weight: 600;
-<<<<<<< HEAD
  font-size:0.8rem; /* adjust paragraph text size 
 }
 
@@ -687,24 +579,3 @@ flex-wrap: wrap;
         grid-template-columns: 1fr;  /* Single-column form layout */
     }
    }
-=======
- font-size:0.8rem; /* adjust paragraph text size */
-}
-
-   .alink {
-       margin: 1rem; /* space around element */
-   }
-   
-   .alinkspan:last-child {
-      display: none; /* Hide link text */
-   }
-   .bot {
-       font-size: 0.9rem;  /* Adjust button size */
-   }
-   .btt {
-      font-weight: 700; /* Adjust font weight */
-      font-size: 0.9rem; /* rAdjust button text */
-      padding: 0;
-   } 
-  }
->>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
