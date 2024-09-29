@@ -1,16 +1,31 @@
+<<<<<<< HEAD
+body { margin: 0;
+    height: 100vh;
+    background-image: url(images/senate-building1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+  }
+=======
 body { 
     background-image: url(images/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+>>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
 
 .main-container, button {
     color: white;
 }
+<<<<<<< HEAD
+
+  
+=======
 footer { display: flex;
      top: 4rem;
     bottom: 0;
     left: 0;
      padding: 60px;
    }
+>>>>>>> d0d6d6d6fbe4827b47ee961f290b4db47edbdfe7
