@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+ }
+
+ :root {
+   --main-font: 'Roboto', 'Montserrat';
+   --header-font: 'Lato';
+   --heading-font: 1.5rem;
+   --header-footer-color: #6da6d1;
+   --navbar-color: rgba(42,170,219,255);
+   --main-color: #f8f8f8;
+   --body-color:rgba(255,255,255,255);
+   --main-heading: #87ceea;
+   --header-link: #4daf50;
+   --header-button-color: #1e9bcdd0;
+   --table-row-color: #edeeee;
+   --table-icon-color:#e76983;
+--font-size: 1rem;
+ }
+ html {
+   scroll-behavior: smooth;
+ }
+
+ body {
+   height: 100vh;
+    font-family: var(--main-font);
+    background-color: #fff;
+    font-size: var(--font-size);
+ }
+
+ /* MAIN DIV STYLE */
+ 
+ #maindiv {
+   margin:   0;
+   display: grid;
+   width: 100%;
+   grid-template-areas: 
+   "head head head" 
+     "aside aside aside"
+   "nav   main main"
+   "footer footer footer";
+   grid-template-rows:120px 100px  3fr  60px; 
+   grid-template-columns: 1fr 2fr 1fr;
+}
+.hero {
+   margin:  0 2rem;
+}
+/* Header style */
+
+  header, #myid { background-color: var(--header-footer-color);
+    grid-area: head;
+    padding:  10px;
+    color: #ffffff;
+  }
+
+  #myid h1 {  
+      text-align: center;
+ white-space: nowrap; 
+ }
+
+ h6  {  
+text-align: center;
+margin: 0.4rem;
+ }
+
+ #myid h2 {
+   margin: 0.4rem;
+   text-align: center;
+ }
+
+h1, h2 {
+   font-size:var(--heading-font);
+}
+
+/* Style for the second header #aside */
+
+ #aside {
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   grid-area: aside;
+   color: black;
+   background-color: white;
+border-bottom: 1px solid #3333334f;
+margin-bottom: 0.5rem;;
+}
+.alink {
+   border-radius: 5px;
+   text-decoration: none;
+   padding: 5px;
+   background-color: var(--header-button-color);
+}
+ 
+.text {
+   font-size: large; 
+   display: inline-block;
+ }
+ .text a:visited {
+   color: var(--header-link)
+ }
+ .text a:hover {
+   color: black;
+   text-decoration: underline;
+ }
+
+ .text a:active {
+   color: red;
+ }
+
+ .text a {
+   text-decoration: none;
+   color: var(--header-link);
+ }
+
+ /* header button style  */
+ .btt {
+   padding: 3px;
+   background-color: var(--header-button-color);
+ }
+.btt:focus {
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);;
+}
+ /* NAVIGATION STYLE */
+
+ nav {grid-area: nav;
+    padding: 10px;
+    background-color: var(--navbar-color);
+    border: 1px inset rgba(0, 0, 0, 0.258);
+    margin-left: 10px;
+     color: #ffffff;
+    height: 60vh;
+    width: 100%;
+    overflow: auto;
+    font-weight: 700;
+    margin-top: 26px;
+ }
+ nav h2 {margin: 1rem;
+   text-align: center;
+ }
+ .imgdiv {
+   margin: 1rem;
+   text-align: center;
+   position: relative
+   width
+   100%
+ }
+
+ .imgdiv img {
+   position: relative;
+   border-radius: 50%;
+ }
+
+ /*  NAVIGATION LINKS STYLE */
+
+ nav ul { margin: 10px;
+ 
+   list-style: none;
+ }
+ nav ul li {
+ padding: 5px; }
+ nav ul li a {
+   color: white;
+   text-decoration: none;
+ }
+ nav ul li a:hover {
+   color: black;
+   text-decoration: underline;
+ }
+ nav ul li a:visited {
+   color: rgb(36, 36, 238);
+ }
+ /* SCROLL BAR */
+
+ #mynav::-webkit-scrollbar {
+   height: 5px;
+ }
+ #mynav::-webkit-scrollbar-track {
+   background: #fff;
+}
+#mynav::-webkit-scrollbar-thumb {
+border-radius:
+10px;
+background-color: var(--header-button-color);
+}
+#mynav::-webkit-scrollbar-thumb:hover {
+ 
+background-color: var(--main-heading);
+}
+
+
+ /* MAIN DIV STYLE 
+ LET'S GET IT!
+ */
+
+ main { width: 100%;
+   margin: 1rem auto;
+   max-width: 1100px;
+    grid-area: main;
+     padding: 10px;
+ }
+ 
+/* FORM STYLES */
+
+form { width: 100%;
+   position: relative; /* make the child element position work effectively and relative to the form element */
+    padding: 40px 10px 20px 10px; /* create space for absolute position h2 and body*/
+    border: 1px outset #33333323;
+    overflow: hidden; }
+ form:hover {
+   box-shadow: 0 0 5px 2px rgba(175, 209, 246, 0.563);
+}
+
+.h2 {
+   width: 100%;
+   background-color: var(--main-heading);
+   position: absolute; /* position h2 for easy layout */
+   top: 0;
+   text-align: center;
+   left: 0;
+   font-size: 21px;
+}
+.form-container {
+   display: grid;
+   grid-template-columns: repeat(3, 2fr);
+    
+   gap: 5px;
+}
+
+label, select  { 
+   display: block;
+ }
+label {
+   font-weight: 600;
+
+}
+ select {
+   border: 1px outset rgb(93, 177, 225);
+   font-weight: 500;
+    width: 140px;
+ }
+ option {
+background-color: rgba(236, 231, 231, 0.719); }
+ select:focus {
+   width: 100%;
+   transition: 0.3ms width ease-in-ease-out;
+ }
+ input {
+transition: 0.03s ease-in-out;   width: 140px;
+ }
+
+ input:focus {
+width: 100%;
+transition: 0.03ms width ease-in-ease-out;
+}
+.bot {  text-align: center;
+    border: 3px outset black;
+   font-weight: 600;
+   font-size: 15px;
+   background-color: var(--main-heading);
+    margin-top: 17px;
+    width: 100%;
+height: 20px;}
+
+.bot:focus {
+   outline: none;
+   box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+}
+
+ /* TABLE STYLES */
+
+ table { position: relative;
+   border-collapse: collapse;
+   width: 100%;
+    padding: 10px;
+   margin-top: 1rem;
+   text-align: center;
+   border: 1px outset rgba(46, 44, 44, 0.083);
+ }
+ tr:nth-child(odd) {
+   background-color: var(--table-row-color);
+ }
+th {
+   background-color: white;
+   padding: 0.2rem;
+} td { font-weight: 500;
+   padding: 0.2rem;
+}
+
+table:hover {
+   background-color: rgba(240, 248, 255, 0.689);
+   box-shadow: 0 0 5px 2px rgba(151, 199, 250, 0.5);
+}
+
+ /* FOOTER STYLES */
+
+ footer { display: flex;
+   grid-area: footer;
+   background-color: var(--header-footer-color);
+   color: #ffffff;
+ justify-content: center;   align-items: center;
+   bottom: 0;
+    padding: 40px;
+  }
+
+
+  /* HOMEPAGE STYLE */
+ /*  .homediv {
+    display: flex; justify-content: space-between;
+  } */
+
+  .homeh2 {
+    text-align: center;
+    margin: 1rem 0 5rem 0;
+  }
+  .homediv {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+.linkdiv {
+  width: 100%;
+}
+  .mybutton { 
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.725); 
+    padding: 20px; 
+    font-size: 15px; 
+    background: none;
+    border-radius: 5px;
+  }
+  
+
+  .mybutton:hover {
+    background-color: rgba(255, 0, 0, 0.883);
+  }
+
+
+  /* FORM PAGE STYLE */
+
+
+  .asidediv {
+    border: 1px solid rgba(44, 42, 42, 0.201); 
+    border-radius: 4px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 50%;
+    min-width: 150px;
+    max-width: 300px;
+  }
+
+  .aside-div {
+    border-left-color: var(--header-footer-color); border-left-width: 4px; border-left-style: solid; padding-left: 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  .aside-div p {
+    text-align: justify;
+   }
+
+   
+.form-q a  {
+  width: 50px; 
+  background: var(--header-button-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 7px 17px;
+text-align: center;
+ }
+
+ .form-container1, input {
+  margin:0 0 1rem 0;
+ }
+
+#hero {
+ 
+margin: 2rem auto;
+  max-width: 450px;
+}  
+  /* RESPONSIVENESS  */
+
+ /* Media Query for screens 700px or smaller */
+@media  (max-width: 900px) {
+   :root {
+       --font-size: 1rem; /* Adjust font size for smaller screens */
+   }
+   
+   header{
+    width: 100%;
+   }
+   #myid h1 {  
+     
+white-space: wrap; 
+}
+   #maindiv {
+       grid-template-columns: 1fr;  /* Switch to a single column */
+       grid-template-areas:
+           "head"
+           "aside"
+           "nav"
+           "main"
+           "footer";  /* Stack everything vertically */
+       grid-template-rows: auto;  /* Adjust rows to fit content */
+   } 
+
+   nav { 
+    width: 83%;
+    
+       height:auto ;  /* Adjust height of the navbar */
+    
+       margin: 1px auto;
+   }
+.bot {
+  width: 50%;
+}
+   form, table {
+       margin: 0;
+       width: 100%;  /* Ensure form and table take full width */
+   }
+   /* label:first-child {
+      margin-top: rem;  margin spacing   at the top only */
+   
+   .form-container {
+       grid-template-columns: 1fr;  /* Single-column form layout */
+   }
+  }
+
+/* Break point 600px */
+
+@media  (max-width: 600px) {
+  :root {
+      --font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  
+  header{
+   width: 100%;
+  }
+  #myid h1 {  
+    
+white-space: wrap; 
+}
+  #maindiv {
+      grid-template-columns: 1fr;  /* Switch to a single column */
+      grid-template-areas:
+          "head"
+          "aside"
+          "nav"
+          "main"
+          "footer";  /* Stack everything vertically */
+      grid-template-rows: auto;  /* Adjust rows to fit content */
+  } 
+
+  nav { 
+   width: 83%;
+   
+      height:auto ;  /* Adjust height of the navbar */
+   
+      margin: 1px auto;
+  }
+.bot {
+ width: 50%;
+}
+  form, table {
+      margin: 0;
+      width: 100%;  /* Ensure form and table take full width */
+  }
+  /* label:first-child {
+     margin-top: rem;  margin spacing   at the top only */
+  
+  .form-container {
+      grid-template-columns: 1fr;  /* Single-column form layout */
+  }
+ }
+
+
+/* Media Query for screens 480px or smaller */
+
+/* @media (max-width: 480px) {
+   :root {
+       --font-size: 0.8rem;   reduce font size for very small screens 
+   }
+   
+   #maindiv, .homediv { display: flex;
+    flex-direction: column;
+flex-wrap: wrap; 
+}
+
+  
+
+   h1, h2 {
+       font-size: 1.2rem; Reduce heading sizes 
+   }
+
+   form, table {
+       margin: 0;
+       width: 100%;  /* Full width for form and table 
+   }
+
+   .form-container {
+       grid-template-columns: 1fr;  /* Single-column form layout 
+   }
+
+   nav {
+      width: 90%; /* Adjust nav bar width 
+       font-size: 0.8rem;  Adjust navbar font size 
+   }
+
+   input, select {
+       width: 100%;  /* Make form inputs fill the width */
+ /*   }
+   #aside p { font-weight: 600;
+ font-size:0.8rem; /* adjust paragraph text size 
+}
+
+   .alink {
+       margin: 1rem; /* space around element 
+   }
+   
+   .alinkspan:last-child {
+      display: none; Hide link text 
+   }
+   .bot {
+       font-size: 0.9rem;   Adjust button size 
+   }
+   .btt {
+      font-weight: 700;  Adjust font weight 
+      font-size: 0.9rem;  rAdjust button text 
+      padding: 0;
+   } 
+  }
+ */
+
+  @media  (max-width: 480px) {
+  body {
+    font-size: 2rem;
+    color: red;
+    font-weight: 900;
+  }
+    header{ background: red;
+     width: 100%;
+    }
+    #myid h1 {  
+      
+ white-space: wrap; 
+ }
+    #maindiv {
+        grid-template-columns: 1fr;  /* Switch to a single column */
+        grid-template-areas:
+            "head"
+            "aside"
+            "nav"
+            "main"
+            "footer";  /* Stack everything vertically */
+        grid-template-rows: auto;  /* Adjust rows to fit content */
+    } 
+ 
+    nav { 
+     width: 83%;
+     
+        height:auto ;  /* Adjust height of the navbar */
+     
+        margin: 1px auto;
+    }
+ .bot {
+   width: 50%;
+ }
+    form, table {
+        margin: 0;
+        width: 100%;  /* Ensure form and table take full width */
+    }
+    /* label:first-child {
+       margin-top: rem;  margin spacing   at the top only */
+    
+    .form-container {
+        grid-template-columns: 1fr;  /* Single-column form layout */
+    }
+   }

@@ -1,0 +1,13 @@
+body { margin: 0;
+    height: 100vh;
+    background-image: url(images/senate-building1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+  }
+
+.main-container, button {
+    color: white;
+}
+
+  
